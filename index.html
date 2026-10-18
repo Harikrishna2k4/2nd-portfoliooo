@@ -1,286 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0b0f">
     <title>Hari Krishna R</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body class="m-0 bg-light">
-<style>
-    /* Desktop: Keep them merged */
-    @media (min-width: 768px) {
-        .custom-stack {
-            display: inline-flex !important;
-        }
-    }
+<body>
 
-    /* Mobile: Break the merge and stack them */
-    @media (max-width: 767px) {
-        .custom-stack {
-            flex-direction: column;
-            display: flex;
-            width: 100%;
-            gap: 5px; /* Adds space when they are stacked */
-        }
-        /* Restore rounded corners for mobile so they look like individual buttons */
-        .custom-stack .btn {
-            border-radius: 0.375rem !important;
-        }
-    }
-</style>
-<nav class="navbar 
-                   navbar-expand 
-                   navbar-dark 
-                   bg-dark">
-        <div class="container-fluid">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://www.linkedin.com/in/r-hari-krishna-2k4">
-                            <img src="LinkedIn_logo.png" alt="linkedin"  style="width: 30px; height: 30px; object-fit: contain;">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://www.youtube.com/@SCIENCEVERIYAN">
-                            <img src="Youtube_logo.png" alt="youtube"  style="width: 30px; height: 30px; object-fit: contain;">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="mailto:hari.r@iitgn.ac.in">
-                            <img src="gmaillogo3.png" alt="email"  style="width: 30px; height: 30px; object-fit: contain;">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://github.com/Harikrishna2k4">
-                            <img src="githublogo.png" alt="email"  style="width: 30px; height: 30px; object-fit: contain;">
-                        </a>
-                    </li>
-                </ul>
+<!-- Top bar -->
+<header class="topbar">
+    <div class="topbar-inner">
+        <a class="brand" href="#">HK<span>.</span></a>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/r-hari-krishna-2k4" aria-label="LinkedIn"><img src="LinkedIn_logo.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/@SCIENCEVERIYAN" aria-label="YouTube"><img src="Youtube_logo.png" alt=""></a></li>
+            <li><a href="mailto:hari.r@iitgn.ac.in" aria-label="Email"><img src="gmaillogo3.png" alt=""></a></li>
+            <li><a href="https://github.com/Harikrishna2k4" aria-label="GitHub"><img src="githublogo.png" alt=""></a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Hero -->
+<main class="hero">
+    <img class="avatar" src="iitmresearchparkimage.jpg" alt="Hari Krishna R">
+    <span class="eyebrow">Physics &middot; Space &middot; Software</span>
+    <h1>Hari Krishna R</h1>
+    <p class="tagline"><b>MSc Physics</b> at IIT Gandhinagar &middot; Physics &amp; software</p>
+
+    <nav class="menu" aria-label="Sections">
+
+        <!-- Education -->
+        <div class="btn-group">
+            <button type="button" class="menu-btn" data-bs-toggle="dropdown" data-bs-offset="0,12" aria-expanded="false">Education</button>
+            <div class="dropdown-menu wide">
+                <div class="dropdown-item-text">
+                    <img class="item-logo" src="iitgnlogo.png" alt="">
+                    <div>
+                        <div class="item-title">MSc Physics &mdash; IIT Gandhinagar</div>
+                        <div class="item-sub">2025 &ndash; 2027 &middot; 7.3 CGPA</div>
+                    </div>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="dropdown-item-text">
+                    <img class="item-logo" src="loyolalogo.png" alt="">
+                    <div>
+                        <div class="item-title">BSc Physics &mdash; Loyola College, Chennai</div>
+                        <div class="item-sub">2022 &ndash; 2025 &middot; 8.16 CGPA</div>
+                    </div>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="dropdown-item-text">
+                    <img class="item-logo" src="vvjclogo.png" alt="">
+                    <div>
+                        <div class="item-title">High School &mdash; SKNS PMC VVJC</div>
+                        <div class="item-sub">2020 &ndash; 2022 &middot; 93.3% in Biomaths</div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Experience -->
+        <div class="btn-group">
+            <button type="button" class="menu-btn" data-bs-toggle="dropdown" data-bs-offset="0,12" aria-expanded="false">Experience</button>
+            <div class="dropdown-menu wide">
+                <div class="dropdown-item-text">
+                    <img class="item-logo" src="starlab.jpeg" alt="">
+                    <div>
+                        <div class="item-title">Electronics &amp; Electrical Systems Intern</div>
+                        <div class="item-sub">STAR Lab, Surat</div>
+                        <div class="item-desc">Developed a custom PCB for a 1U CubeSat, integrating the antenna deployment mechanism, data transmission and power subsystem.</div>
+                    </div>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="dropdown-item-text">
+                    <img class="item-logo" src="spacekidz.png" alt="">
+                    <div>
+                        <div class="item-title">Science Educator</div>
+                        <div class="item-sub">Space Kidz India, Chennai</div>
+                        <div class="item-desc">Taught orbital mechanics, system design and rocket fundamentals to girl students, so they can collaborate on and build small satellites.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="btn-group">
+            <button type="button" class="menu-btn" data-bs-toggle="dropdown" data-bs-offset="0,12" aria-expanded="false">Skills</button>
+            <div class="dropdown-menu">
+                <span class="dropdown-item-text">Java &amp; DSA</span>
+                <span class="dropdown-item-text">SQL</span>
+                <span class="dropdown-item-text">MERN stack</span>
+                <span class="dropdown-item-text">Arduino</span>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="btn-group">
+            <button type="button" class="menu-btn" data-bs-toggle="dropdown" data-bs-offset="0,12" aria-expanded="false">Projects</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://chitchat-oi0i.onrender.com/" target="_blank" rel="noopener">Chitchat &ndash; Chat App <span class="arrow">&#8599;</span></a>
+                <a class="dropdown-item" href="https://github.com/Harikrishna2k4/Custom-shell-in-C" target="_blank" rel="noopener">Custom Shell in C <span class="arrow">&#8599;</span></a>
+                <a class="dropdown-item" href="https://heroic-eclair-ceac02.netlify.app/" target="_blank" rel="noopener">URL Shortener <span class="arrow">&#8599;</span></a>
+                <a class="dropdown-item" href="https://mern-notes-app-ci7r.onrender.com/" target="_blank" rel="noopener">Notes App <span class="arrow">&#8599;</span></a>
+            </div>
+        </div>
+
+        <!-- Certification -->
+        <div class="btn-group">
+            <button type="button" class="menu-btn" data-bs-toggle="dropdown" data-bs-offset="0,12" aria-expanded="false">Certification</button>
+            <div class="dropdown-menu">
+                <span class="dropdown-item-text">Coming soon</span>
+            </div>
+        </div>
+
     </nav>
+</main>
 
-<div class="card border-0 mx-auto bg-light" style="width: 18rem;">
-    <div class="card-body text-center">
-        <img src="iitmresearchparkimage.jpg" 
-             class="rounded-circle mx-auto d-block" 
-             style="width: 200px; height: 200px; object-fit: cover;" 
-             alt="Profile">
-        <h2 class="card-title mt-3"><strong>Hari Krishna R</strong> </h2>
-    </div>
-</div>
+<footer>&copy; 2026 Hari Krishna R</footer>
 
-<div class="container text-center mb-5">
-    <div class="btn-group custom-stack shadow-sm">
-        <div class="btn-group">
-            <button type="button" 
-                class="btn btn-dark dropdown-toggle" 
-                data-bs-toggle="dropdown">
-                Education
-            </button>
-
-
-            <div class="dropdown-menu text-wrap shadow">
-                <div class="dropdown-item d-flex align-items-center p-1 p-md-3">
-                    <span class="d-block d-sm-none me-2">
-                        <img src="iitgnlogo.png" style="width:40px;">
-                    </span>
-                    <span class="d-none d-sm-block me-3">
-                        <img src="iitgnlogo.png" style="width:60px;">
-                    </span>
-                    <div class="py-1 py-md-2 pe-2 pe-md-3">
-                        <div class="fw-semibold small">
-                            <span class="d-block d-sm-none">
-                                MSc PH - IIT GN 2025-27
-                            </span>
-                            <span class="d-none d-sm-block">
-                                MSc Physics in IIT Gandhinagar 2025-2027
-                            </span>
-                        </div>
-
-                        <div class="text-muted small">
-                            7.3 CGPA
-                        </div>
-                    </div>
-                </div><hr class="dropdown-divider">
-
-
-                <div class="dropdown-item d-flex align-items-center p-1 p-md-3">
-                    <span class="d-block d-sm-none me-2">
-                        <img src="loyolalogo.png" style="width:40px;">
-                    </span>
-
-                    <span class="d-none d-sm-block me-3">
-                        <img src="loyolalogo.png" style="width:60px;">
-                    </span>
-                    <div class="py-1 py-md-2 pe-2 pe-md-3">
-                        <div class="fw-semibold small">
-                            <span class="d-block d-sm-none">
-                                BSc PH - Loyola College 2022-25
-                            </span>
-                            <span class="d-none d-sm-block">
-                                BSc Physics in Loyola College, Chennai 2022-2025
-                            </span>
-                        </div>
-
-                        <div class="text-muted small">
-                            8.16 CGPA
-                        </div>
-                    </div>
-                </div><hr class="dropdown-divider">
-
-
-                <div class="dropdown-item d-flex align-items-center p-1 p-md-3">
-                    <span class="d-block d-sm-none me-2">
-                        <img src="vvjclogo.png" style="width:40px;">
-                    </span>
-
-                    <span class="d-none d-sm-block me-3">
-                        <img src="vvjclogo.png" style="width:60px;">
-                    </span>
-                    <div class="py-1 py-md-2 pe-2 pe-md-3">
-                        <div class="fw-semibold small">
-                            <span class="d-block d-sm-none">
-                                SKNS PMC VVJC 2020-22
-                            </span>
-                            <span class="d-none d-sm-block">
-                                High School in SKNS PMC VVJC 2020-2022
-                            </span>
-                        </div>
-
-                        <div class="text-muted small">
-                            93.3% in Biomaths
-                        </div>
-                    </div>
-                </div><hr class="dropdown-divider">
-            </div>
-        </div>
-
-
-        <div class="btn-group">
-            <button type="button" 
-                class="btn btn-dark dropdown-toggle" 
-                data-bs-toggle="dropdown">
-                Expirence
-            </button>
-            <div class="dropdown-menu text-wrap shadow">
-                <div class="dropdown-item d-flex align-items-center p-1 p-md-3">
-                    <span class="d-block d-sm-none me-2">
-                        <img src="starlab.jpeg" style="width:40px;">
-                    </span>
-                    <span class="d-none d-sm-block me-3">
-                        <img src="starlab.jpeg" style="width:60px;">
-                    </span>
-                    <div class="py-1 py-md-2 pe-2 pe-md-3">
-                        <div class="fw-semibold small">
-                            <span class="d-block d-sm-none">
-                                Electronics system intern
-                            </span>
-                            <span class="d-none d-sm-block">
-                                Electronics & electrical system intern
-                            </span>
-                        </div>
-                        <div class="text-muted small">
-                            STAR lab, surat
-                        </div>
-                        <div class="flex-grow-1 text-wrap">
-                            Developed custom PCB for 1U cubesat, integrating antenna deployment mechanism, data transmission and power subsystem.
-                        </div>
-                    </div>
-                </div><hr class="dropdown-divider">
-                <div class="dropdown-item d-flex align-items-center p-1 p-md-3">
-                    <span class="d-block d-sm-none me-2">
-                        <img src="spacekidz.png" style="width:40px;">
-                    </span>
-                    <span class="d-none d-sm-block me-3">
-                        <img src="spacekidz.png" style="width:60px;">
-                    </span>
-                    <div class="py-1 py-md-2 pe-2 pe-md-3">
-                        <div class="fw-semibold small">
-                            <span class="d-block d-sm-none">
-                                Science educator
-                            </span>
-                            <span class="d-none d-sm-block">
-                                Science educator
-                            </span>
-                        </div>
-                        <div class="text-muted small">
-                            Space Kidz India, Chennai
-                        </div>
-                        <div class="flex-grow-1 text-wrap">
-                            Teaching orbital mechanics, system design and rocket fundamentals to girls students for them to get enough knowledge to collaborate and build small satellite
-                        </div>
-                    </div>
-                </div><hr class="dropdown-divider">
-            </div>
-        </div>
-
-
-        <div class="btn-group">
-            <button type="button" 
-                class="btn btn-dark dropdown-toggle" 
-                data-bs-toggle="dropdown">
-                Skills
-            </button>
-            <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">
-                    JAVA & DSA
-                </a>
-                <a href="#" class="dropdown-item">
-                    SQL
-                </a>
-                <a href="#" class="dropdown-item">
-                    MERN stack
-                </a>
-                <a href="#" class="dropdown-item">
-                    Arduino
-                </a>
-            </div>
-        </div>
-        <div class="btn-group">
-            <button type="button" 
-                class="btn btn-dark dropdown-toggle" 
-                data-bs-toggle="dropdown">
-                Projects
-            </button>
-            <div class="dropdown-menu">
-                <a href="https://chitchat-oi0i.onrender.com/" class="dropdown-item">
-                    Chitchat - Chat App
-                </a>
-                <a href="https://github.com/Harikrishna2k4/Custom-shell-in-C" class="dropdown-item">
-                    Custom Shell in c
-                </a>
-                <a href="https://heroic-eclair-ceac02.netlify.app/" class="dropdown-item">
-                    URL Shortener
-                </a>
-                <a href="https://mern-notes-app-ci7r.onrender.com/" class="dropdown-item">
-                    Notes App 
-                </a>
-            </div>
-        </div>
-        <div class="btn-group">
-            <button type="button" 
-                class="btn btn-dark dropdown-toggle" 
-                data-bs-toggle="dropdown">
-                Certification
-            </button>
-            <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">
-                    Nil
-                </a>
-                <a href="#" class="dropdown-item">
-                    Nil
-                </a>
-                <a href="#" class="dropdown-item">
-                    Nil
-                </a>
-                <a href="#" class="dropdown-item">
-                    Nil
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
 </body>
 </html>
