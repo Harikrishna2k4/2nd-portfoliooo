@@ -84,24 +84,6 @@ body::after {
 }
 .brand span { color: var(--accent); }
 
-.social { display: flex; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
-.social a {
-    display: grid;
-    place-items: center;
-    width: 34px;
-    height: 34px;
-    padding: 7px;
-    border-radius: 10px;
-    background: #eef0f5;                       /* light tile so every logo is visible */
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset, 0 4px 14px rgba(0, 0, 0, 0.35);
-    transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
-}
-.social a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6) inset, 0 8px 20px rgba(120, 138, 255, 0.25);
-}
-.social img { width: 100%; height: 100%; object-fit: contain; display: block; }
-
 /* ---------- Hero ---------- */
 .hero {
     max-width: 680px;
